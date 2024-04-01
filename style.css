@@ -1,0 +1,109 @@
+@font-face {
+    font-family: MinhaFonte;
+    src: url('Gencity.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+body {
+    width: 100vw;
+    overflow-y: hidden;
+    font-family: MinhaFonte, Arial, sans-serif;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+h1 {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    transition: all 1.5s ease-in-out;
+    font-size: 7em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.headerH1 {
+    top: 6vh;
+    font-size: 3em;
+}
+
+#sec1 header {
+    height: 12vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+marquee {
+    font-size: 3em;
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    padding: 2vh;
+    width: 80vw;
+}
+
+.top-marquee {
+    top: 0;
+}
+
+section {
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.appear-section {
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sec1Hide {
+    animation: disappear 2s ease-in forwards;
+}
+
+@keyframes disappear {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
