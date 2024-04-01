@@ -37,7 +37,7 @@ body {
 
 h1 {
     position: fixed;
-    top: 50vh;
+    top: 50dvh;
     left: 50vw;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .headerH1 {
-    top: 6vh;
+    top: 6dvh;
     font-size: 3em;
 }
 
