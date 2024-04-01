@@ -13,6 +13,11 @@
     background-color: rgba(0, 0, 0, 0.486);
 }
 
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     width: 100vw;
     overflow-y: hidden;
@@ -83,7 +88,7 @@ section {
 }
 
 .appear-section {
-    animation: appear 1s;
+    animation: appear 1.3s;
 }
 
 @keyframes appear {
@@ -96,7 +101,7 @@ section {
 }
 
 .sec1Hide {
-    animation: disappear 2s ease-in forwards;
+    animation: disappear 1.3s ease-in forwards;
 }
 
 @keyframes disappear {

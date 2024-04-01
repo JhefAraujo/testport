@@ -17,5 +17,5 @@ document.getElementsByTagName("h1")[0].addEventListener("click", function () {
         document.getElementById("sec1").style.display = "none";
         document.getElementById("sec1").classList.remove("sec1Hide");
         window.addEventListener("click", handleclick);
-    }, 2000);
+    }, 1300);
 });
