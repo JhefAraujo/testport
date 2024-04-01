@@ -37,8 +37,8 @@ body {
 
 h1 {
     position: fixed;
-    top: 50dvh;
-    left: 50vw;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
     transition: all 1.5s ease-in-out;
@@ -61,7 +61,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100svh;
 }
 
 marquee {
