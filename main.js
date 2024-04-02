@@ -19,3 +19,5 @@ document.getElementsByTagName("img")[0].addEventListener("click", function () {
         window.addEventListener("click", handleclick);
     }, 1300);
 });
+
+//comentário para desbugar
