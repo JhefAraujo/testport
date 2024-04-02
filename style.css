@@ -131,12 +131,30 @@ section {
     justify-content: space-around;
 }
 
+.container-bottom {
+    top: inherit;
+    bottom: 0;
+    height: fit-content;
+}
+
 .text {
     color: white;
     padding: 0;
     mix-blend-mode: exclusion;
     font-size: 1.1em;
     font-family: 'montserrat', sans-serif;
+}
+
+.line {
+    width: 35px;
+    border-radius: 5px;
+    mix-blend-mode: exclusion;
+    background-color: white;
+    height: 1px;
+}
+
+.line-bottom {
+    width: 85px;
 }
 
 .appear-section {
