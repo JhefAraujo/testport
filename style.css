@@ -8,6 +8,10 @@
     #desktopbg {
         display: none;
     }
+
+    .logo {
+        filter: url(#warp);
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -80,7 +84,6 @@ body {
     z-index: 6;
     transition: all 1.5s ease-in-out;
     height: 20vh;
-    filter: url(#warp);
 }
 
 .svg {
