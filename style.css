@@ -89,7 +89,8 @@ body {
     transform: translate(-50%, -50%);
     z-index: 6;
     transition: all 1.5s ease-in-out;
-    height: 20vh;
+    height: 0vh;
+    width: 0;
 }
 
 .line-left {
