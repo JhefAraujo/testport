@@ -63,6 +63,7 @@ body {
     z-index: 6;
     transition: all 1.5s ease-in-out;
     height: 20vh;
+    filter: drop-shadow(2px 4px 3px black);
 }
 
 .line-left {
