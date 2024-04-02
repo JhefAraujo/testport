@@ -10,19 +10,11 @@
 
 <body>
     <main>
-        <div class="leftmirror"></div>
-        <div class="rightmirror"></div>
-        <svg class="svg">
-            <filter id="warp">
-                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="5">
-                </feTurbulence>
-                <fecolorMatrix in="waves" type="hueRotate">
-                    <animate attributeName="values" values="0;360" dur="5s" repeatCount="indefinite"></animate>
-                </fecolorMatrix>
-                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic">
-                </feDisplacementMap>
-            </filter>
-        </svg>
+        <div class="container">
+            <p class="text portuguese">desenvolvedor</p>
+            <p class="text">front-end</p>
+            <p class="text english">developer</p>
+        </div>
         <img class="logo" src="blacklogo.png" alt="Logo">
         <video autoplay muted loop class="bg" id="mobilebg" src="mobilebg.mp4"></video>
         <video autoplay muted loop class="bg" id="desktopbg" src="desktopbg.mp4"></video>

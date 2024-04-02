@@ -43,27 +43,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.language {
-    position: fixed;
-    top: 2vw;
-    right: 2vw;
-    z-index: 6;
-    padding: 1vh 2vw;
-    border-radius: 1px;
-    color: rgb(212, 212, 212);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.671);
-    transition: 0.5s all;
-}
-
-.whiteLanguage {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.81);
-    top: 3vh;
-    right: 3vh;
-    transition: 2s all;
-}
-
 .bg {
     position: fixed;
     top: 0;
@@ -84,17 +63,6 @@ body {
     z-index: 6;
     transition: all 1.5s ease-in-out;
     height: 20vh;
-}
-
-.svg {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 6;
-    transition: all 1.5s ease-in-out;
-    height: 0vh;
-    width: 0;
 }
 
 .line-left {
@@ -146,6 +114,29 @@ section {
     top: 0;
     left: 0;
     display: none;
+}
+
+.english {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    color: white;
+    padding: 0;
+    mix-blend-mode: exclusion;
+    font-size: 1.1em;
+    font-family: 'montserrat', sans-serif;
 }
 
 .appear-section {
