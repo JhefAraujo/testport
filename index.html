@@ -20,12 +20,13 @@
                 <fecolorMatrix in="waves" type="hueRotate">
                     <animate attributeName="values" values="0;360" dur="5s" repeatCount="indefinite"></animate>
                 </fecolorMatrix>
-                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="20" in="SourceGraphic">
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="25" in="SourceGraphic">
                 </feDisplacementMap>
             </filter>
         </svg>
         <img class="logo" src="blacklogo.png" alt="Logo">
-        <video autoplay muted loop class="bg" src="mobilebg.mp4"></video>
+        <video autoplay muted loop class="bg" id="mobilebg" src="mobilebg.mp4"></video>
+        <video autoplay muted loop class="bg" id="desktopbg" src="desktopbg.mp4"></video>
     </main>
     <section id="sec1" class="appear-section">
         <header></header>

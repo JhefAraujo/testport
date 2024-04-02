@@ -4,6 +4,19 @@
     src: url(Gencity.otf);
 }
 
+@media screen and (max-width: 768px){
+    #desktopbg {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #mobilebg {
+        display: none;
+    }
+    
+}
+
 * {
     margin: 0;
     padding: 0;
