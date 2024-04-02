@@ -49,27 +49,15 @@ body {
     color: rgb(212, 212, 212);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.671);
-    transition: 0.3s all;
-}
-
-.main-btn {
-    font-family: "gencity", monospace;
-    position: absolute;
-    bottom: 5vh;
-    font-size: 3em;
-    z-index: 2;
-    color: rgb(24, 24, 24);
-}
-
-.shadow {
-    font-size: 3.05em;
-    z-index: 1;
-    color: white;
+    transition: 0.5s all;
 }
 
 .whiteLanguage {
     color: black;
     background-color: rgba(255, 255, 255, 0.81);
+    top: 3vh;
+    right: 3vh;
+    transition: 2s all;
 }
 
 .bg {
