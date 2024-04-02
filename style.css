@@ -106,7 +106,7 @@ main {
 }
 
 section {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
     height: 200vh;
     width: 100vw;
     position: absolute;
@@ -121,11 +121,11 @@ section {
 }
 
 .container {
-    position: fixed;
+    position: absolute;
+    transition: all 1.5s;
     width: 100%;
     left: 0;
     top: 0;
-    transition: all 1s;
     padding: 10px;
     display: flex;
     align-items: center;
