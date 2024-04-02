@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
-    font-family: MinhaFonte;
-    src: url('Gencity.otf') format('opentype');
+    font-family: "gencity";
+    src: url(Gencity.otf);
 }
 
 * {
@@ -13,7 +14,8 @@
     background-color: rgba(0, 0, 0, 0.486);
 }
 
-html, body {
+html,
+body {
     width: 100vw;
     overflow-x: hidden;
 }
@@ -21,7 +23,40 @@ html, body {
 body {
     width: 100vw;
     overflow-y: hidden;
-    font-family: MinhaFonte, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+.language {
+    position: fixed;
+    top: 2vw;
+    right: 2vw;
+    z-index: 6;
+    padding: 1vh 2vw;
+    border-radius: 1px;
+    color: rgb(212, 212, 212);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.671);
+    transition: 0.3s all;
+}
+
+.main-btn {
+    font-family: "gencity", monospace;
+    position: absolute;
+    bottom: 5vh;
+    font-size: 3em;
+    z-index: 2;
+    color: rgb(24, 24, 24);
+}
+
+.shadow {
+    font-size: 3.05em;
+    z-index: 1;
+    color: white;
+}
+
+.whiteLanguage {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.81);
 }
 
 .bg {
@@ -41,7 +76,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 6;
+    transition: all 1.5s ease-in-out;
+    height: 20vh;
+    filter: url(#warp);
+}
+
+.svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
     transition: all 1.5s ease-in-out;
     height: 20vh;
 }
@@ -91,6 +137,7 @@ section {
     height: 200vh;
     width: 100vw;
     position: absolute;
+    z-index: 5;
     top: 0;
     left: 0;
     display: none;
