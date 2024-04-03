@@ -1,37 +1,36 @@
 function handleclick() {
-    this.document.getElementById("sec1").style.display = "block";
-    this.document.getElementById("filter").style.display = "block";
+    document.getElementById("sec1").style.display = "block";
     for (let i = 0; i < document.getElementsByClassName('container').length; i++) {
         const element = document.getElementsByClassName('container')[i];
         element.style.opacity = 0;
     }
-    this.document.getElementsByTagName("img")[0].classList.add("headerH1");
+    document.getElementsByTagName("img")[0].classList.add("headerH1");
     setTimeout(() => {
-        this.document.body.style.overflowY = "scroll";
+        document.body.style.overflowY = "scroll";
+        removeEventListener("click", arguments.callee);
+        document.getElementsByTagName("img")[0].addEventListener("click", recuo)
     }, 1000);
-    this.removeEventListener("click", arguments.callee);
+
 }
 
-window.addEventListener("click", handleclick);
+document.getElementsByClassName('logo')[0].addEventListener("click", handleclick);
 
-document.getElementsByTagName("img")[0].addEventListener("click", function () {
-    this.classList.remove("headerH1");
+
+function recuo() {
+    document.getElementsByClassName('logo')[0].classList.remove("headerH1");
     document.body.style.overflowY = "hidden";
     for (let i = 0; i < document.getElementsByClassName('container').length; i++) {
         const element = document.getElementsByClassName('container')[i];
         element.style.opacity = 1;
     }
     document.getElementById("sec1").classList.add("sec1Hide");
-    document.getElementById("filter").classList.add("filterhide");
-
     setTimeout(() => {
         document.getElementById("sec1").style.display = "none";
-        document.getElementById("filter").style.display = "none";
         document.getElementById("sec1").classList.remove("sec1Hide");
-        document.getElementById("filter").classList.remove("filterhide");
-        window.addEventListener("click", handleclick);
+        document.getElementsByClassName('logo')[0].removeEventListener("click", recuo);
+        document.getElementsByClassName('logo')[0].addEventListener("click", handleclick)
     }, 1300);
-});
+}
 
 function adjustFontSize() {
     const container = document.getElementsByClassName('cardContainer')[0];

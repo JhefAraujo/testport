@@ -184,7 +184,7 @@ body {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: drop-shadow(2px 4px 3px black);
+    filter: drop-shadow(0px 0px 10px black);
     animation: rotate 10s linear infinite;
 }
 
@@ -238,7 +238,7 @@ main {
 }
 
 section {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgb(0 12 17 / 90%);
     height: 200vh;
     width: 100vw;
     position: absolute;
@@ -246,6 +246,7 @@ section {
     top: 0;
     left: 0;
     display: none;
+    
 }
 
 .english {
@@ -299,8 +300,12 @@ section {
     0% {
         transform: translateY(100%);
     }
+    50% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
     100% {
         transform: translateY(0);
+        background-color: rgb(0 12 17 / 90%);
     }
 }
 
