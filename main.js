@@ -28,4 +28,18 @@ document.getElementsByTagName("img")[0].addEventListener("click", function () {
     }, 1300);
 });
 
-//comentário para desbugar
+function adjustFontSize() {
+    const container = document.getElementsByClassName('cardContainer')[0];
+    const textElement = document.getElementsByClassName('tech')[0];
+    let fontSize = parseFloat(window.getComputedStyle(textElement, null).getPropertyValue('font-size'));
+
+    // Loop para ajustar o tamanho da fonte
+    while (textElement.offsetWidth < container.offsetWidth) {
+        fontSize += 1; // Aumenta o tamanho da fonte
+        textElement.style.fontSize = fontSize + 'px';
+    }
+
+    // Reduz o tamanho da fonte em 1px para garantir que o texto não ultrapasse a largura da div
+    fontSize -= 1;
+    textElement.style.fontSize = fontSize + 'px';
+}

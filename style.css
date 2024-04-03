@@ -66,6 +66,95 @@ body {
     filter: drop-shadow(2px 4px 3px black);
 }
 
+.cardContainer {
+    height: 50vh;
+    width: 80vw;
+    overflow: scroll;
+    align-items: center;
+    justify-content: start;
+    margin: 5vh auto 5vh;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100vw);
+    animation: reveal 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.wrapper {
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+}
+
+.tech {
+    width: fit-content;
+    text-align: center;
+    font-family: 'gencity', sans-serif;
+    color: #d8dad9;
+    font-size: 15vw;
+    white-space: nowrap;
+    transform: translateX(100vw);
+    margin: 5vh auto 5px;
+    animation: reveal 1.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateX(100vh);
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.card {
+    height: 100%;
+    width: 80vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.card img {
+    width: 75vw;
+    height: 75vw;
+}
+
+.cardwrap {
+    width: 75vw;
+    height: 75vw;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.reactlogo {
+    width: 57vw !important;
+    height: 57vw !important;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(2px 4px 3px black);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 .line-left {
     position: absolute;
     top: 50%;
@@ -130,7 +219,8 @@ section {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 5%;
 }
 
 .container-bottom {
@@ -170,6 +260,11 @@ section {
     100% {
         transform: translateY(0);
     }
+}
+
+#sec1 {
+    width: 100vw;
+    overflow: hidden;
 }
 
 .sec1Hide {
