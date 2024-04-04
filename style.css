@@ -67,7 +67,7 @@ body {
 }
 
 .cardContainer {
-    height: 50vh;
+    height: 56vh;
     width: 80vw;
     position: relative;
     z-index: 21;
@@ -326,4 +326,20 @@ section {
     100% {
         transform: translateY(100vh);
     }
+}
+
+.changetech {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+#html {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.tecnology {
+    transition: 1s all;
 }
