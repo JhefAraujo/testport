@@ -67,7 +67,7 @@ body {
 }
 
 .cardContainer {
-    height: 56vh;
+    height: 90vw;
     width: 80vw;
     position: relative;
     z-index: 21;
