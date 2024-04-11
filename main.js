@@ -66,6 +66,7 @@ function changeCard() {
     else if (contador === 2) {
         document.getElementById("css").classList.remove("destaque");
         document.getElementById("react").classList.add("destaque");
+        document.getElementById("sec1").style.backgroundColor = "rgb(0 12 17 / 90%)";
         contador = 0;
     }
 }
