@@ -69,14 +69,41 @@ body {
 }
 
 .btn {
-    border: 3px solid white;
+    position: relative;
     height: 50px;
     width: 50px;
     margin-top: 3vw;
     margin-bottom: 3vw;
     border-radius: 50%;
     margin: 3vw auto 3vw;
+    overflow: visible;
+    background-image: linear-gradient(to right, transparent 0%, #bdfff6 50%, transparent 100%);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    animation: shine 1.8s infinite ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+@keyframes shine {
+    0% {
+        background-position: -1000% 50%;
+    }
+    100% {
+        background-position: 1100% 50%;
+    }
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+  }
 
 .cardContainer {
     width: 80vw;
