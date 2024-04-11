@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 @font-face {
     font-family: "gencity";
     src: url(Gencity.otf);
@@ -97,8 +99,23 @@ body {
     }
 }
 
+@keyframes pulse {
+    0% {
+        color: rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: rgba(255, 255, 255, 0.1);
+    }
+}
+
 .btn::before {
-    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f2f1"; /* Código do ícone que você quer usar */
+    color: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,6 +124,13 @@ body {
     width: 95%;
     height: 95%;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: pulse;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
 }
 
 .cardContainer {
