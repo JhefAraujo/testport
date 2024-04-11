@@ -1,3 +1,6 @@
+const secao = document.getElementById("sec1");
+const logo = document.getElementsByClassName('logo')[0];
+
 function handleclick() {
     document.getElementById("sec1").style.display = "block";
     for (let i = 0; i < document.getElementsByClassName('container').length; i++) {
@@ -13,22 +16,22 @@ function handleclick() {
 
 }
 
-document.getElementsByClassName('logo')[0].addEventListener("click", handleclick);
+logo.addEventListener("click", handleclick);
 
 
 function recuo() {
-    document.getElementsByClassName('logo')[0].classList.remove("headerH1");
+    logo.classList.remove("headerH1");
     document.body.style.overflowY = "hidden";
     for (let i = 0; i < document.getElementsByClassName('container').length; i++) {
         const element = document.getElementsByClassName('container')[i];
         element.style.opacity = 1;
     }
-    document.getElementById("sec1").classList.add("sec1Hide");
+    secao.classList.add("sec1Hide");
     setTimeout(() => {
-        document.getElementById("sec1").style.display = "none";
-        document.getElementById("sec1").classList.remove("sec1Hide");
-        document.getElementsByClassName('logo')[0].removeEventListener("click", recuo);
-        document.getElementsByClassName('logo')[0].addEventListener("click", handleclick)
+        secao.style.display = "none";
+        secao.classList.remove("sec1Hide");
+        logo.removeEventListener("click", recuo);
+        logo.addEventListener("click", handleclick)
     }, 1300);
 }
 
@@ -51,22 +54,11 @@ function adjustFontSize() {
 var contador = 0;
 
 function changeCard() {
-    if (contador === 0) {
-        document.getElementById("react").classList.remove("destaque");
-        document.getElementById("html").classList.add("destaque");
-        document.getElementById("sec1").style.backgroundColor = "rgba(17, 0, 0, 0.9)";
-        contador = 1;
-    }
-    else if (contador === 1) {
-        document.getElementById("html").classList.remove("destaque");
-        document.getElementById("css").classList.add("destaque");
-        document.getElementById("sec1").style.backgroundColor = "rgba(0, 0, 17, 0.9)";
-        contador = 2;
-    }
-    else if (contador === 2) {
-        document.getElementById("css").classList.remove("destaque");
-        document.getElementById("react").classList.add("destaque");
-        document.getElementById("sec1").style.backgroundColor = "rgb(0 12 17 / 90%)";
-        contador = 0;
-    }
+    const elementos = ["react", "html", "css"];
+    const cores = ["rgb(0 12 17 / 90%)","rgba(17, 0, 0, 0.9)", "rgba(0, 0, 17, 0.9)"];
+
+    document.getElementById(elementos[contador]).classList.remove("destaque");
+    contador = (contador + 1) % elementos.length;
+    document.getElementById(elementos[contador]).classList.add("destaque");
+    secao.style.backgroundColor = cores[contador];
 }
