@@ -217,13 +217,13 @@ body {
 
 @keyframes float {
     0% {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) translateY(-10px);
     }
     50% {
-        transform: translate(-50%, -50%) translateY(-20px);
+        transform: translate(-50%, -50%) translateY(10px);
     }
     100% {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) translateY(-10px);
     }
 }
 
