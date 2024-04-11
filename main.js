@@ -47,3 +47,25 @@ function adjustFontSize() {
     fontSize -= 1;
     textElement.style.fontSize = fontSize + 'px';
 }
+
+var contador = 0;
+
+function changeCard() {
+    if (contador === 0) {
+        document.getElementById("react").classList.remove("destaque");
+        document.getElementById("html").classList.add("destaque");
+        document.getElementById("sec1").style.backgroundColor = "rgba(17, 0, 0, 0.9)";
+        contador = 1;
+    }
+    else if (contador === 1) {
+        document.getElementById("html").classList.remove("destaque");
+        document.getElementById("css").classList.add("destaque");
+        document.getElementById("sec1").style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+        contador = 2;
+    }
+    else if (contador === 2) {
+        document.getElementById("css").classList.remove("destaque");
+        document.getElementById("react").classList.add("destaque");
+        contador = 0;
+    }
+}
