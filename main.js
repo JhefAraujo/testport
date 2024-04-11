@@ -60,7 +60,7 @@ function changeCard() {
     else if (contador === 1) {
         document.getElementById("html").classList.remove("destaque");
         document.getElementById("css").classList.add("destaque");
-        document.getElementById("sec1").style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+        document.getElementById("sec1").style.backgroundColor = "rgba(0, 0, 17, 0.9)";
         contador = 2;
     }
     else if (contador === 2) {
