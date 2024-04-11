@@ -114,7 +114,7 @@ body {
 .btn::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f2f1"; /* Código do ícone que você quer usar */
+    content: "\f25a"; /* Código do ícone que você quer usar */
     color: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 50%;
