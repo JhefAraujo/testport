@@ -189,6 +189,14 @@ body {
 }
 
 .reactlogo {
+    animation: rotate 10s linear infinite;
+}
+
+.htmllogo {
+    animation: float 2s linear infinite;
+}
+
+.techlogo {
     width: 57vw !important;
     height: 57vw !important;
     position: absolute;
@@ -196,7 +204,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(0px 0px 10px black);
-    animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
@@ -205,6 +212,18 @@ body {
     }
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+    100% {
+        transform: translate(-50%, -50%);
     }
 }
 
