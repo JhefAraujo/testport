@@ -55,7 +55,7 @@ var contador = 0;
 
 function changeCard() {
     const elementos = ["react", "html", "css"];
-    const cores = ["rgb(0 12 17 / 90%)","rgba(17, 0, 0, 0.9)", "rgba(0, 0, 17, 0.9)"];
+    const cores = ["rgb(0 20 25 / 90%)","rgba(25, 0, 0, 0.9)", "rgba(0, 0, 25, 0.9)"];
 
     document.getElementById(elementos[contador]).classList.remove("destaque");
     contador = (contador + 1) % elementos.length;
