@@ -473,3 +473,24 @@ section {
         transform: translateX(-300%);
     }
 }
+
+.fa-chevron-down {
+    color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 2em;
+    width: 100vw;
+    margin-top: 10%;
+    animation: opacity 2s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
