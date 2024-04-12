@@ -111,11 +111,28 @@ body {
     }
 }
 
-.btn::before {
+
+.btn::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f0a6"; /* Código do ícone que você quer usar */
+    content: "\f245"; /* Código do ícone que você quer usar */
     color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    z-index: 2;
+}
+
+.btn::before {
+    content: ""; /* Código do ícone que você quer usar */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -127,11 +144,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation-name: pulse;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.2s;
+    z-index: 1;
 }
+
 
 .cardContainer {
     width: 80vw;
