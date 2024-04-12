@@ -480,17 +480,7 @@ section {
     font-size: 2em;
     width: 100vw;
     margin-top: 10%;
-    animation: opacity 2s;
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    animation: reveal 1.5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
