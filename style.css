@@ -87,7 +87,7 @@ body {
     background-size: 90% 100%;
     background-repeat: no-repeat;
     animation: shine 1.8s infinite ease-in-out;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 @keyframes shine {
