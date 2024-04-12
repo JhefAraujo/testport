@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @font-face {
     font-family: "gencity";
@@ -453,4 +454,22 @@ section {
 .tecnology {
     transition: 1s all;
     left: 101%;
+}
+
+.marquee {
+    font-size: 1.6em;
+    margin-top: 15%;
+    color: rgba(255, 255, 255, 0.2);
+    animation: marquee 10s linear infinite;
+    text-wrap: nowrap;
+    font-family: "Major Mono Display", monospace;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
 }
