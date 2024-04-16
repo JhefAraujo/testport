@@ -86,7 +86,8 @@ function changeCard() {
         element.classList.remove(corTema[contador - 1]);
         element.classList.add(corTema[contador]);
         if (contador === 0) {
-            
+            element.classList.remove(corTema[2]);
+            element.classList.add(corTema[contador]);
         }
     }
 }
