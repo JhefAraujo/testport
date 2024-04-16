@@ -486,10 +486,19 @@ section {
     transition: all 0.4s;
 }
 
-.bento__item:hover {
-    box-shadow: 0px 0px 15px 1px rgba(255, 128, 187, 0.356);
-    border: 1px solid rgb(255, 128, 187);
-    color: rgb(255, 128, 187);
+.bentoreact:hover {
+    box-shadow: 0px 0px 15px 1px rgba(0, 204, 255, 0.336);
+    border: 1px solid rgb(0, 204, 255);
+}
+
+.bentohtml:hover {
+    box-shadow: 0px 0px 15px 1px rgba(255, 0, 0, 0.342);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.bentocss:hover {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 255, 0.329);
+    border: 1px solid rgb(0, 0, 255);
 }
 
 .bento2 i {
@@ -512,7 +521,6 @@ section {
     justify-content: center;
     flex-direction: column;
     row-gap: 5px;
-    font-size: 4vw;
     text-align: center;
 }
 
