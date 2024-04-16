@@ -447,7 +447,7 @@ section {
 }
 
 .bento__item {
-    height: 100%;
+    height: 25vh;
     width: 100%;
     grid-column: var(--columns, span 1);
     grid-row: var(--rows, span 1);
