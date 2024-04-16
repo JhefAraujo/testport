@@ -27,30 +27,65 @@
         </div>
     </main>
     <section id="sec1" class="appear-section">
-        <header></header>
-        <div class="cardContainer">
-            <div class="wrapper">
-                <div class="card">
-                    <div class="cardwrap">
-                        <div class="tecnology destaque" id="react">
-                            <img src="reactbg.jpg" alt="React Background" class="techbg">
-                            <img src="reactlogo.png" alt="React Logo" class="techlogo reactlogo">
+        <div class="secsec">
+            <header></header>
+            <div class="cardContainer">
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="cardwrap">
+                            <div class="tecnology destaque" id="react">
+                                <img src="reactbg.jpg" alt="React Background" class="techbg">
+                                <img src="reactlogo.png" alt="React Logo" class="techlogo reactlogo">
+                            </div>
+                            <div class="tecnology" id="html">
+                                <img src="htmlbg.jpg" alt="HTML Background" class="techbg html">
+                                <img src="htmllogo.png" class="techlogo htmllogo" alt="Logo HTML">
+                            </div>
+                            <div class="tecnology" id="css">
+                                <img src="cssbg.jpg" alt="CSS Background" class="techbg css">
+                                <img src="csslogo.png" class="techlogo htmllogo" alt="Logo CSS">
+                            </div>
                         </div>
-                        <div class="tecnology" id="html">
-                            <img src="htmlbg.jpg" alt="HTML Background" class="techbg html">
-                            <img src="htmllogo.png" class="techlogo htmllogo" alt="Logo HTML">
-                        </div>
-                        <div class="tecnology" id="css">
-                            <img src="cssbg.jpg" alt="CSS Background" class="techbg css">
-                            <img src="csslogo.png" class="techlogo htmllogo" alt="Logo CSS">
-                        </div>
+                        <div onclick="changeCard(this)" class="btn"></div>
                     </div>
-                    <div onclick="changeCard(this)" class="btn"></div>
+                </div>
+            </div>
+            <div class="marquee">estudante de análise e desenvolvimento de sistemas</div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="secsec info">
+            <div class="bento">
+                <div class="bento__container" variant-1>
+                    <div class="bento__item bento1" style="--rows: span 2; --columns: 1 / -1;">
+                        <div class="bento__item__content">
+                            <h2>Jogo da Velha</h2>
+                            <p>Jogo feito utilizando JavaScript</p>
+                        </div>
+                        <img src="tictac.jpg" alt="Jogo da Velha">
+                    </div>
+                    <div class="bento__item" style="--rows: span 2;"></div>
+                    <div class="bento__item" style="--rows: span 2; --columns: span 2;"></div>
+                    <div class="bento__item" style="--columns: 1 / -1;"></div>
+                    <div class="bento__item" style="--columns: span 2;"></div>
+                    <div class="bento__item"></div>
+                </div>
+                <div class="bento__container" variant-2>
+                    <div class="bento__item" style="--columns: span 2;"></div>
+                    <div class="bento__item" style="--columns: span 2;"></div>
+                    <div class="bento__item" style="--rows: span 4; --columns: 1 / -1"></div>
+                    <div class="bento__item"></div>
+                    <div class="bento__item" style="--columns: span 2;"></div>
+                    <div class="bento__item"></div>
+                </div>
+                <div class="bento__container" variant-3>
+                    <div class="bento__item" style="--rows: span 2; --columns: 1 / -1;"></div>
+                    <div class="bento__item" style="--rows: span 2;"></div>
+                    <div class="bento__item" style="--rows: span 2;"></div>
+                    <div class="bento__item" style="--columns: 1 / -1;"></div>
+                    <div class="bento__item" style="--columns: 1 / -1;"></div>
                 </div>
             </div>
         </div>
-        <div class="marquee">estudante de análise e desenvolvimento de sistemas</div>
-        <i class="fa-solid fa-chevron-down"></i>
     </section>
     <script src="main.js"></script>
 </body>
