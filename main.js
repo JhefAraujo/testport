@@ -71,23 +71,9 @@ function changeCard() {
         "rgba(25, 0, 0, 0.9)",
         "rgba(0, 0, 25, 0.9)",
     ];
-    const corTema = ["bentoreact", "bentohtml", "bentocss"];
 
     document.getElementById(elementos[contador]).classList.remove("destaque");
     contador = (contador + 1) % elementos.length;
     document.getElementById(elementos[contador]).classList.add("destaque");
     secao.style.backgroundColor = cores[contador];
-    for (
-        let index = 0;
-        index < document.getElementsByClassName("bento__item").length;
-        index++
-    ) {
-        const element = document.getElementsByClassName("bento__item")[index];
-        element.classList.remove(corTema[contador - 1]);
-        element.classList.add(corTema[contador]);
-        if (contador === 0) {
-            element.classList.remove(corTema[2]);
-            element.classList.add(corTema[contador]);
-        }
-    }
 }
