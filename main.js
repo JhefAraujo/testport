@@ -93,12 +93,20 @@ function checkScroll() {
         setTimeout(() => {
             document.getElementsByTagName("img")[0].classList.add("oculto");
             document.getElementsByTagName("img")[0].classList.remove("visivel");
-        }, 300);
+            document.getElementsByClassName("header")[0].classList.remove("visivelHeader");
+            document.getElementsByClassName("header")[0].classList.add("ocultoHeader");
+            document.getElementsByClassName("header")[0].style.opacity = 1;
+        }, 200);
     } else {
         setTimeout(() => {
             document.getElementsByTagName("img")[0].classList.add("visivel");
             document.getElementsByTagName("img")[0].classList.remove("oculto");
-        }, 300);
+            document.getElementsByClassName("header")[0].classList.add("visivelHeader");
+            document.getElementsByClassName("header")[0].classList.remove("ocultoHeader");
+            if (scrollAtual == 0) {
+                document.getElementsByClassName("header")[0].style.opacity = 0;
+            }
+        }, 200);
     }
 
     ultimoScroll = scrollAtual;
