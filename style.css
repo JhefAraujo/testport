@@ -54,7 +54,7 @@ body {
     width: 100vw;
     object-fit: cover;
     object-position: center center;
-    height: 100vh;
+    height: 100dvh;
     overflow-x: hidden;
 }
 
@@ -183,7 +183,7 @@ body {
 @keyframes reveal {
     0% {
         opacity: 0;
-        transform: translateX(100vh);
+        transform: translateX(100dvh);
     }
 
     50% {
@@ -333,7 +333,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100dvh;
 }
 
 section {
@@ -405,7 +405,7 @@ section {
 
 #sec1 {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: 5;
@@ -422,13 +422,13 @@ section {
 }
 
 .secsec {
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
 }
 
 .info {
     background-color: black;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -443,7 +443,7 @@ section {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(100vh);
+        transform: translateY(100dvh);
     }
 }
 
