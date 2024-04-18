@@ -40,12 +40,9 @@ body {
     height: 100svh;
     overflow-y: scroll;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
 }
 
 body {
-    width: 100vw;
-    overflow-y: hidden;
     font-family: "Montserrat", sans-serif;
 }
 
