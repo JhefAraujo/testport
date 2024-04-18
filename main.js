@@ -88,7 +88,7 @@ let ultimoScroll = document.getElementById("sec1").scrollTop;
 function checkScroll() {
     let scrollAtual = document.getElementById("sec1").scrollTop;
 
-    if (scrollAtual > ultimoScroll) {
+    if (scrollAtual > ultimoScroll + 100) {
         // Scrolling para baixo
         setTimeout(() => {
             document.getElementsByTagName("img")[0].classList.add("oculto");
@@ -96,8 +96,9 @@ function checkScroll() {
             document.getElementsByClassName("header")[0].classList.remove("visivelHeader");
             document.getElementsByClassName("header")[0].classList.add("ocultoHeader");
             document.getElementsByClassName("header")[0].style.opacity = 1;
+            ultimoScroll = scrollAtual;
         }, 200);
-    } else {
+    } else if (scrollAtual < ultimoScroll - 100){
         setTimeout(() => {
             document.getElementsByTagName("img")[0].classList.add("visivel");
             document.getElementsByTagName("img")[0].classList.remove("oculto");
@@ -106,8 +107,8 @@ function checkScroll() {
             if (scrollAtual == 0) {
                 document.getElementsByClassName("header")[0].style.opacity = 0;
             }
+            ultimoScroll = scrollAtual;
         }, 200);
     }
 
-    ultimoScroll = scrollAtual;
 }
