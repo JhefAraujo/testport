@@ -20,11 +20,13 @@ function handleclick() {
             .getElementsByTagName("img")[0]
             .addEventListener("click", recuo);
     }, 1000);
+    document.getElementById("sec1").addEventListener("scroll", checkScroll);
 }
 
 logo.addEventListener("click", handleclick);
 
 function recuo() {
+    document.getElementById("sec1").removeEventListener("scroll", checkScroll);
     logo.classList.remove("headerH1");
     document.getElementsByTagName("img")[0].classList.remove("visivel");
     document.getElementsByTagName("img")[0].classList.remove("oculto");
@@ -82,17 +84,22 @@ function changeCard() {
 
 let ultimoScroll = document.getElementById("sec1").scrollTop;
 
-document.getElementById("sec1").addEventListener("scroll", function () {
+
+function checkScroll() {
     let scrollAtual = document.getElementById("sec1").scrollTop;
 
     if (scrollAtual > ultimoScroll) {
         // Scrolling para baixo
-        document.getElementsByTagName("img")[0].classList.add("oculto");
-        document.getElementsByTagName("img")[0].classList.remove("visivel");
+        setTimeout(() => {
+            document.getElementsByTagName("img")[0].classList.add("oculto");
+            document.getElementsByTagName("img")[0].classList.remove("visivel");
+        }, 300);
     } else {
-        document.getElementsByTagName("img")[0].classList.add("visivel");
-        document.getElementsByTagName("img")[0].classList.remove("oculto");
+        setTimeout(() => {
+            document.getElementsByTagName("img")[0].classList.add("visivel");
+            document.getElementsByTagName("img")[0].classList.remove("oculto");
+        }, 300);
     }
 
     ultimoScroll = scrollAtual;
-});
+}
