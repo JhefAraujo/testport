@@ -104,11 +104,10 @@ function checkScroll() {
             document.getElementsByTagName("img")[0].classList.remove("oculto");
             document.getElementsByClassName("header")[0].classList.add("visivelHeader");
             document.getElementsByClassName("header")[0].classList.remove("ocultoHeader");
-            if (scrollAtual == 0) {
-                document.getElementsByClassName("header")[0].style.opacity = 0;
-            }
             ultimoScroll = scrollAtual;
         }, 200);
     }
-
+    if (scrollAtual == 0) {
+        document.getElementsByClassName("header")[0].style.opacity = 0;
+    }
 }
