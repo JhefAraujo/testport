@@ -26,6 +26,8 @@ logo.addEventListener("click", handleclick);
 
 function recuo() {
     logo.classList.remove("headerH1");
+    document.getElementsByTagName("img")[0].classList.remove("visivel");
+    document.getElementsByTagName("img")[0].classList.remove("oculto");
     document.body.style.overflowY = "hidden";
     for (
         let i = 0;
