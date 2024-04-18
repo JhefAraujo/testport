@@ -37,6 +37,8 @@
 html,
 body {
     width: 100vw;
+    height: 100svh;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
