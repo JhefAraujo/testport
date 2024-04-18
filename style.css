@@ -338,7 +338,8 @@ main {
 
 section {
     background-color: rgb(0 12 17 / 90%);
-    height: 200vh;
+    height: 100svh;
+    overflow-y: scroll;
     width: 100vw;
     position: absolute;
     z-index: 5;
