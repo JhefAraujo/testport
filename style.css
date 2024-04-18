@@ -312,6 +312,16 @@ body {
     height: 8vh;
 }
 
+.visivel {
+    top: 6vh;
+    transition: all 0.4s;
+}
+
+.oculto {
+    top: -6vh; /* Altura do cabeçalho, ajuste conforme necessário */
+    transition: all 0.4s;
+}
+
 @keyframes appearheader {
     0% {
         height: 0;

@@ -77,3 +77,20 @@ function changeCard() {
     document.getElementById(elementos[contador]).classList.add("destaque");
     secao.style.backgroundColor = cores[contador];
 }
+
+let ultimoScroll = document.getElementById("sec1").scrollTop;
+
+document.getElementById("sec1").addEventListener("scroll", function () {
+    let scrollAtual = document.getElementById("sec1").scrollTop;
+
+    if (scrollAtual > ultimoScroll) {
+        // Scrolling para baixo
+        document.getElementsByTagName("img")[0].classList.add("oculto");
+        document.getElementsByTagName("img")[0].classList.remove("visivel");
+    } else {
+        document.getElementsByTagName("img")[0].classList.add("visivel");
+        document.getElementsByTagName("img")[0].classList.remove("oculto");
+    }
+
+    ultimoScroll = scrollAtual;
+});
