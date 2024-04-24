@@ -83,10 +83,13 @@ function changeCard() {
 }
 
 let ultimoScroll = document.getElementById("sec1").scrollTop;
-
+let isScrolling = false;
+let alturaVisivel = document.body.clientHeight;
 
 function checkScroll() {
     let scrollAtual = document.getElementById("sec1").scrollTop;
+    let sec1 = document.getElementById("sec1");
+    let alturaTotal = sec1.scrollHeight;
 
     if (scrollAtual > ultimoScroll + 50) {
         // Scrolling para baixo
@@ -109,5 +112,11 @@ function checkScroll() {
     }
     if (scrollAtual == 0) {
         document.getElementsByClassName("header")[0].style.opacity = 0;
+    }
+    if (scrollAtual > alturaVisivel / 2) {
+        for (let i = 0; i < document.getElementsByClassName("textAnim").length; i++) {
+            const element = document.getElementsByClassName("textAnim")[i];
+            element.style.display = 'block';
+        }
     }
 }
