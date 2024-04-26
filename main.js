@@ -120,3 +120,7 @@ function checkScroll() {
         }
     }
 }
+
+function scrollDown() {
+    document.getElementById("sec1").scrollTo(0, document.body.clientHeight);
+}
