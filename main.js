@@ -88,7 +88,6 @@ let alturaVisivel = document.body.clientHeight;
 
 function checkScroll() {
     let scrollAtual = document.getElementById("sec1").scrollTop;
-    console.log(scrollAtual);
     let sec1 = document.getElementById("sec1");
     let alturaTotal = sec1.scrollHeight;
 
@@ -115,16 +114,16 @@ function checkScroll() {
         document.getElementsByClassName("header")[0].style.opacity = 0;
     }
     if (scrollAtual > alturaVisivel / 2) {
-        for (let i = 0; i < document.getElementsByClassName("textAnim").length; i++) {
-            const element = document.getElementsByClassName("textAnim")[i];
+            const element = document.getElementById("textAnim");
+            const grid = document.getElementById("card-grid");
+            grid.style.display = 'block';
             element.style.display = 'block';
-        }
     }
     else {
-        for (let i = 0; i < document.getElementsByClassName("textAnim").length; i++) {
-            const element = document.getElementsByClassName("textAnim")[i];
-            element.style.display = 'none';
-        }
+        const element = document.getElementById("textAnim");
+        const grid = document.getElementById("card-grid");
+        grid.style.display = 'none';
+        element.style.display = 'none';
     }
 }
 

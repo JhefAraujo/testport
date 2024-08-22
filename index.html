@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JJJ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +26,6 @@
         </div>
     </main>
     <section id="sec1" class="appear-section">
-        
         <div class="secsec sec0">
             <div class="header ocultoHeader"></div>
             <div class="wrapper">
@@ -52,8 +50,17 @@
             <i onclick="scrollDown()" class="fa-solid fa-chevron-down"></i>
         </div>
         <div class="secsec info">
-            <h1 class="textAnim text0">Meus</h1>
-            <h1 class="textAnim text1">Projetos</h1>
+            <div id="textAnim">
+                <h1 class="text0">Meus</h1>
+                <h1 class="text1">Projetos</h1>
+            </div>
+            <div class="card-grid" id="card-grid">
+                <div class="project-card">
+                    <div class="top-bar"><span>P I P  B O Y</span></div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1mlKvR3aHCjDLcQh-LlhPfXT2FPYjeW23oDdVFBTaxrZrH0GiLWlHdjdlIV4PMAJGhA&usqp=CAU" alt="" class="project-card-img">
+                    <div class="bot-bar"><div class="click-to-see"><span>Veja mais</span></div></div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="main.js"></script>
