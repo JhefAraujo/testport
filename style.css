@@ -43,7 +43,7 @@
 html,
 body {
     width: 100vw;
-    height: 100svh;
+    height: vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -654,6 +654,7 @@ section {
 }
 
 .project-card-img {
+    background-color: white;
     width: 100%;
     height: 100%;
     object-fit: cover;
