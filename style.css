@@ -76,6 +76,16 @@ body {
     filter: drop-shadow(2px 4px 3px black);
 }
 
+.mouse {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: white;
+    animation: pulse 1.8s infinite ease-in-out;
+    z-index: 9;
+}
 
 @keyframes shine {
     0% {

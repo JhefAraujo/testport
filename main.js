@@ -88,6 +88,7 @@ let alturaVisivel = document.body.clientHeight;
 
 function checkScroll() {
     let scrollAtual = document.getElementById("sec1").scrollTop;
+    console.log(scrollAtual);
     let sec1 = document.getElementById("sec1");
     let alturaTotal = sec1.scrollHeight;
 
@@ -117,6 +118,12 @@ function checkScroll() {
         for (let i = 0; i < document.getElementsByClassName("textAnim").length; i++) {
             const element = document.getElementsByClassName("textAnim")[i];
             element.style.display = 'block';
+        }
+    }
+    else {
+        for (let i = 0; i < document.getElementsByClassName("textAnim").length; i++) {
+            const element = document.getElementsByClassName("textAnim")[i];
+            element.style.display = 'none';
         }
     }
 }
