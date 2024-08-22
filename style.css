@@ -645,7 +645,7 @@ section {
 }
 
 .project-card {
-    width: clamp(300px, 350px);
+    width: 300px;
     height: 65vh;
     position: relative;
     border-radius: 25px 25px 5px 5px;
