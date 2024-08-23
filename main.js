@@ -120,8 +120,12 @@ function checkScroll() {
     if (scrollAtual > alturaVisivel / 2) {
             const element = document.getElementById("textAnim");
             const grid = document.getElementById("card-grid");
-            grid.style.display = 'block';
+            const info = document.getElementsByClassName("info")[0];
+            grid.style.display = 'grid';
             element.style.display = 'block';
+            setTimeout(() => {
+                info.style.height = 'auto';
+            }, 3500);
     }
 }
 
