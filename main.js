@@ -45,6 +45,10 @@ function recuo() {
         secao.classList.remove("sec1Hide");
         logo.removeEventListener("click", recuo);
         logo.addEventListener("click", handleclick);
+        document.getElementsByClassName("text0")[0].style.animation = "none";
+        document.getElementsByClassName("text1")[0].style.animation = "none";
+        document.getElementsByClassName("card-grid")[0].style.animation = "none";
+        document.getElementsByClassName("card-grid")[0].style.opacity = 1;
     }, 1300);
 }
 
@@ -118,12 +122,6 @@ function checkScroll() {
             const grid = document.getElementById("card-grid");
             grid.style.display = 'block';
             element.style.display = 'block';
-    }
-    else {
-        const element = document.getElementById("textAnim");
-        const grid = document.getElementById("card-grid");
-        grid.style.display = 'none';
-        element.style.display = 'none';
     }
 }
 
