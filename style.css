@@ -739,3 +739,9 @@ section {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 970px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}

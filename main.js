@@ -125,7 +125,7 @@ function checkScroll() {
             element.style.display = 'block';
             setTimeout(() => {
                 info.style.height = 'auto';
-            }, 3500);
+            }, 3600);
     }
 }
 
