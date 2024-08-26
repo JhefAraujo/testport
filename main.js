@@ -47,7 +47,8 @@ function recuo() {
         logo.addEventListener("click", handleclick);
         document.getElementsByClassName("text0")[0].style.animation = "none";
         document.getElementsByClassName("text1")[0].style.animation = "none";
-        document.getElementsByClassName("card-grid")[0].style.animation = "none";
+        document.getElementsByClassName("card-grid")[0].style.animation =
+            "none";
         document.getElementsByClassName("card-grid")[0].style.opacity = 1;
     }, 1300);
 }
@@ -100,17 +101,25 @@ function checkScroll() {
         setTimeout(() => {
             document.getElementsByTagName("img")[0].classList.add("oculto");
             document.getElementsByTagName("img")[0].classList.remove("visivel");
-            document.getElementsByClassName("header")[0].classList.remove("visivelHeader");
-            document.getElementsByClassName("header")[0].classList.add("ocultoHeader");
+            document
+                .getElementsByClassName("header")[0]
+                .classList.remove("visivelHeader");
+            document
+                .getElementsByClassName("header")[0]
+                .classList.add("ocultoHeader");
             document.getElementsByClassName("header")[0].style.opacity = 1;
             ultimoScroll = scrollAtual;
         }, 200);
-    } else if (scrollAtual < ultimoScroll - 50){
+    } else if (scrollAtual < ultimoScroll - 50) {
         setTimeout(() => {
             document.getElementsByTagName("img")[0].classList.add("visivel");
             document.getElementsByTagName("img")[0].classList.remove("oculto");
-            document.getElementsByClassName("header")[0].classList.add("visivelHeader");
-            document.getElementsByClassName("header")[0].classList.remove("ocultoHeader");
+            document
+                .getElementsByClassName("header")[0]
+                .classList.add("visivelHeader");
+            document
+                .getElementsByClassName("header")[0]
+                .classList.remove("ocultoHeader");
             ultimoScroll = scrollAtual;
         }, 200);
     }
@@ -118,14 +127,14 @@ function checkScroll() {
         document.getElementsByClassName("header")[0].style.opacity = 0;
     }
     if (scrollAtual > alturaVisivel / 2) {
-            const element = document.getElementById("textAnim");
-            const grid = document.getElementById("card-grid");
-            const info = document.getElementsByClassName("info")[0];
-            grid.style.display = 'grid';
-            element.style.display = 'block';
-            setTimeout(() => {
-                info.style.height = 'auto';
-            }, 3600);
+        const element = document.getElementById("textAnim");
+        const grid = document.getElementById("card-grid");
+        const info = document.getElementsByClassName("info")[0];
+        grid.style.display = "grid";
+        element.style.display = "block";
+        setTimeout(() => {
+            info.style.height = "auto";
+        }, 3600);
     }
 }
 
