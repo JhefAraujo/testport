@@ -62,8 +62,6 @@ body {
     object-position: center center;
     height: 100vh;
     overflow-x: hidden;
-    filter: blur(9px);
-    transform: scale(1.1);
 }
 
 .logo {
