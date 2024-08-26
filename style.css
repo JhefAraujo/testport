@@ -745,4 +745,8 @@ section {
         grid-template-columns: 1fr;
         gap: 4vw;
     }
+
+    .info {
+        padding: 15vh;
+    }
 }
