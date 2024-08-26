@@ -743,5 +743,6 @@ section {
 @media screen and (max-width: 970px) {
     .card-grid {
         grid-template-columns: 1fr;
+        gap: 4vw;
     }
 }
