@@ -518,7 +518,7 @@ section {
 .info {
     background-color: black;
     height: 100vh;
-    padding: 25px;
+    padding: 7vw;
     width: 100vw;
     overflow: hidden;
     position: relative;
